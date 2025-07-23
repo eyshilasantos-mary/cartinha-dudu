@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para: My only blue person 🩵</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #d6eaff;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background: #6ea8d9;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .envelope:hover {
+            transform: scale(1.05);
+        }
+        .letter {
+            display: none;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .title {
+            font-family: 'Pacifico', cursive;
+            font-size: 24px;
+            color: #2a5783;
+        }
+        audio {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="openLetter()">
+        <h2 style="color: white; text-align: center; padding-top: 80px;">Clique para abrir 💌</h2>
+    </div>
+    <div class="letter" id="letter">
+        <div class="title">De: Mary<br>Para: My only blue person 🩵</div>
+        <p>(Desde já peço desculpas, isso aqui vai ficar muito brega e emocional, mas dá um desconto, é o aniversário do meu melhor amigo kakak)</p>
+        <p>Do Neighbors para a vida, é estranho como tudo chegou aqui, às vezes penso em como seria se eu não tivesse entrado no jogo naquele dia, ou se a gente tivesse se pulado kakaka, mas eu fico muito feliz com a forma que aconteceu, guardo tudo de forma especial no meu coração, a música que você tocou ali no meio do jogo, a conversa após a gente sair, cada ligação, as poucas e especiais vezes que jogamos, tudo isso me aquece.</p>
+        <p>Não sei como explicar o tanto que te ter presente no meu dia a dia foi e é especial, você é um garoto incrível, sem exagero, provavelmente sem esforço melhorando os meus dias, e eu espero que eu possa retribuir esse sentimento.</p>
+        <p>Hoje é um dia especial, e eu desejo de coração que você aproveite ele, e que agora, nessa nova fase, com essa nova idade, você viva coisas inesquecíveis no melhor sentido da palavra, que você viva intensamente, permanecendo nos caminhos certos, e testemunhando tudo que Deus tem de melhor pra você.</p>
+        <p><strong>Feliz aniversário, Dudu 🤍</strong></p>
+    </div>
+    <audio controls autoplay loop>
+        <source src="https://cdn.pixabay.com/download/audio/2023/04/19/audio_30e80b9cb2.mp3?filename=lofi-study-141076.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+    <script>
+        function openLetter() {
+            document.querySelector('.letter').style.display = 'block';
+            document.querySelector('.envelope').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
