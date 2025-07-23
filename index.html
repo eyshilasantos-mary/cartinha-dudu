@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Para: My only blue person 🩵</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet" />
     <style>
         body {
             margin: 0;
@@ -63,14 +62,17 @@
         <p>Hoje é um dia especial, e eu desejo de coração que você aproveite ele, e que agora, nessa nova fase, com essa nova idade, você viva coisas inesquecíveis no melhor sentido da palavra, que você viva intensamente, permanecendo nos caminhos certos, e testemunhando tudo que Deus tem de melhor pra você.</p>
         <p><strong>Feliz aniversário, Dudu 🤍</strong></p>
     </div>
-    <audio controls autoplay loop>
-        <source src="https://cdn.pixabay.com/download/audio/2023/04/19/audio_30e80b9cb2.mp3?filename=lofi-study-141076.mp3" type="audio/mpeg">
+    <audio id="audio" controls loop>
+        <source src="https://cdn.pixabay.com/download/audio/2023/04/19/audio_30e80b9cb2.mp3?filename=lofi-study-141076.mp3" type="audio/mpeg" />
         Seu navegador não suporta áudio.
     </audio>
     <script>
         function openLetter() {
             document.querySelector('.letter').style.display = 'block';
             document.querySelector('.envelope').style.display = 'none';
+
+            const audio = document.getElementById('audio');
+            audio.play();
         }
     </script>
 </body>
